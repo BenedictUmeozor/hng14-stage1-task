@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Neo-Brutalist Editorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <article class="profile-card" data-testid="test-profile-card">
+            <div class="card-header">
+                <figure class="avatar-container">
+                    <img 
+                        src="/avatar.jpeg" 
+                        alt="Profile photo of Alex Rivera, smiling with natural lighting"
+                        class="avatar"
+                        data-testid="test-user-avatar"
+                    >
+                    <figcaption class="sr-only">User profile picture</figcaption>
+                </figure>
+                
+                <div class="header-content">
+                    <h1 class="user-name" data-testid="test-user-name">Benedict Umeozor</h1>
+                    <time class="timestamp" data-testid="test-user-time" aria-live="polite" aria-atomic="true"></time>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <section class="bio-section">
+                    <p class="user-bio" data-testid="test-user-bio">
+                        Creative technologist and design systems architect with a passion for building 
+                        accessible, beautiful interfaces. I believe the best digital experiences are 
+                        those that feel human, intuitive, and delightfully unexpected.
+                    </p>
+                </section>
+
+                <nav class="social-section" aria-label="Social media links">
+                    <h2 class="section-title">Connect</h2>
+                    <ul class="social-links" data-testid="test-user-social-links">
+                        <li>
+                            <a 
+                                href="https://www.twitter.com/dev_benedict" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                data-testid="test-user-social-twitter"
+                                class="social-link"
+                            >
+                                <span class="social-icon" aria-hidden="true">𝕏</span>
+                                <span class="social-label">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://github.com/BenedictUmeozor" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                data-testid="test-user-social-github"
+                                class="social-link"
+                            >
+                                <span class="social-icon" aria-hidden="true">⌘</span>
+                                <span class="social-label">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.linkedin.com/in/benedict-umeozor-014b70228/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                data-testid="test-user-social-linkedin"
+                                class="social-link"
+                            >
+                                <span class="social-icon" aria-hidden="true">in</span>
+                                <span class="social-label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://wa.me/2348108218964" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                data-testid="test-user-social-whatsapp"
+                                class="social-link"
+                            >
+                                <span class="social-icon" aria-hidden="true">💬</span>
+                                <span class="social-label">WhatsApp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="lists-container">
+                    <section class="list-section hobbies-section">
+                        <h2 class="section-title">Hobbies</h2>
+                        <ul class="content-list" data-testid="test-user-hobbies">
+                            <li>Reading</li>
+                            <li>Watching football</li>
+                            <li>Coding</li>
+                            <li>Playing games</li>
+                        </ul>
+                    </section>
+
+                    <section class="list-section dislikes-section">
+                        <h2 class="section-title">Dislikes</h2>
+                        <ul class="content-list" data-testid="test-user-dislikes">
+                            <li>Bugs in production</li>
+                            <li>Outdated dependencies</li>
+                            <li>Poor documentation</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
